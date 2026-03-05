@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevConnect Community</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      nav {
+        border: 2px solid black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        width: 700px;
+        margin: 10px 0 0 0;
+        padding: 10px;
+      }
+      #profilephoto {
+        height: 80px;
+        width: 80px;
+        border-radius: 18px;
+      }
+      h3 {
+        padding: 10px;
+      }
+      #post {
+        height: 650px;
+        width: 650px;
+        padding: 30px;
+      }
+      p {
+        width: 650px;
+        font-weight: bold;
+        font-family: "Courier New", Courier, monospace;
+      }
+      #inclike {
+        margin: 0 0 25px 0;
+      }
+      .card{
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 0 0 10px 0;
+      }
+      .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 720px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+  <h1>DevConnect Community</h1>
+<button onclick="gototheprofile()"><h2>&lt;Profile/&gt;</h2></button>
+</div>    
+<div class="card">
+      <nav>
+        <img src="profilephoto.png" alt="profilephoto" id="profilephoto" />
+        <h3>Shivam027</h3>
+        <!-- <a href="">further options</a> -->
+      </nav>
+      <img src="firstpost.png" alt="firstpost" id="post" />
+      <p>
+        DevConnect : Building a developers community where people can share
+        their experience , learnings and many others things also to help others
+        and get connected by awesome brains.
+      </p>
+      <button id="inclike" onclick="increaseLike()">
+        <i class="fa-solid fa-thumbs-up"></i> Like
+      </button>
+      <span id="likecount">0</span>
+    </div>
+    <div class="card">
+      <nav>
+        <img src="spiderman.jpg" alt="profilephoto" id="profilephoto" />
+        <h3>Spider007</h3>
+        <!-- <a href="">further options</a> -->
+      </nav>
+      <img src="secondpost.jpg" alt="secondpost" id="post" />
+      <p>
+        Data Analysis : the new boom, the new resoruce, the new type of mine for
+        unlimited resources and opportunities.
+      </p>
+      <button id="inclike" onclick="increaseLikess()">
+        <i class="fa-solid fa-thumbs-up"></i> Like
+      </button>
+      <span id="likecountss">0</span>
+    </div>
+  </body>
+  <script>
+    let likes = 0;
+    function increaseLike() {
+      likes++;
+      document.getElementById("likecount").innerText = likes;
+    }
+    let likesss = 0;
+    function increaseLikess() {
+      likesss++;
+      document.getElementById("likecountss").innerText = likesss;
+    }
+    function gototheprofile(){
+        window.location.href="/profile.html"
+    }
+  </script>
+</html>

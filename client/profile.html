@@ -4,8 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
+    <style>
+      #imgcontainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      #mainphoto{
+        height: 300px;
+        width: 300px;
+        border-radius: 360px;
+      }
+      .info{
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+      }
+      #infocontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #posts{
+        height: 500px;
+        width: 500px;
+      }
+            p {
+        width: 650px;
+        font-weight: bold;
+        font-family: "Courier New", Courier, monospace;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      nav {
+        border: 2px solid black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        width: 700px;
+        margin: 10px 0 0 0;
+        padding: 10px;
+      }
+      #profilephoto {
+        height: 80px;
+        width: 80px;
+        border-radius: 18px;
+      }
+      h3 {
+        padding: 10px;
+      }
+      #post {
+        height: 500px;
+        width: 650px;
+        padding: 30px;
+      }
+      p {
+        width: 650px;
+        font-weight: bold;
+        font-family: "Courier New", Courier, monospace;
+      }
+      #inclike {
+        margin: 0 0 25px 0;
+      }
+      .card{
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 0 0 10px 0;
+      }
+    </style>
   </head>
   <body>
-    <h1>User Profile</h1>
+    <h1>Developer's Profile</h1>
+    <div  id="imgcontainer">
+      <img src="profilephoto.png" alt="profilephoto" id="mainphoto">
+    </div>
+    <div id="infocontainer">
+      <div class="info">Full Name : Shivam Vashishtha</div>
+    <div class="info">Username : Shivam027</div>
+    <div class="info">Number of Posts : 1 </div>
+    </div>
+    <a href="/AddPost.html">Add a Post</a>
+    <a href="/Thoughts.html">Describe your today's thoughts</a>
+<div class="card">
+      <nav>
+        <img src="profilephoto.png" alt="profilephoto" id="profilephoto" />
+        <h3>Shivam027</h3>
+        <!-- <a href="">further options</a> -->
+      </nav>
+      <img src="firstpost.png" alt="firstpost" id="post" />
+      <p>
+        DevConnect : Building a developers community where people can share
+        their experience , learnings and many others things also to help others
+        and get connected by awesome brains.
+      </p>
+      <button id="inclike" onclick="increaseLike()">
+        <i class="fa-solid fa-thumbs-up"></i> Like
+      </button>
+      <span id="likecount">0</span>
+    </div>
   </body>
 </html>
