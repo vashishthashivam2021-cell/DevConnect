@@ -1,0 +1,149 @@
+* {
+  font-family: "Inter", sans-serif;
+  background-color: whitesmoke;
+}
+body {
+  margin: 20px 30px 30px 30px;
+}
+#header {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 2px white solid;
+  height: 50px;
+  border-radius: 10px;
+  margin: 0 0 20px 0;
+}
+#logo {
+  color: white;
+  background-color: #3b82f6;
+  border: 2px #3b82f6 solid;
+  border-radius: 5px;
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 5px;
+  height: 30px;
+}
+#logoname {
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  background: white;
+  margin: 0 100px 0 0;
+}
+#search {
+  width: 500px;
+  height: 30px;
+  border: 2px solid aliceblue;
+  border-radius: 10px;
+  background-color: aliceblue;
+  margin: 0 100px 0 0;
+}
+#bellicon {
+  background-color: white;
+  font-size: 20px;
+  margin: 0 100px 0 0;
+}
+#bellicon:hover {
+  background-color: aliceblue;
+}
+#profile {
+  font-size: 20px;
+  background-color: white;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+#profile:hover {
+  background-color: aliceblue;
+}
+#pp {
+  border-radius: 360px;
+  height: 40px;
+  width: 40px;
+}
+#un {
+  background-color: white;
+  font-weight: bolder;
+  font-size: 16px;
+}
+#container {
+  background-color: white;
+  border: 2px white solid;
+  border-radius: 20px;
+  margin: 0 0 20px 0;
+}
+#thoughts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px white solid;
+  border-radius: 20px;
+  background-color: white;
+}
+#in {
+  width: 1000px;
+  height: 35px;
+  border: 2px solid aliceblue;
+  border-radius: 20px;
+  background-color: aliceblue;
+}
+#btn {
+  display: flex;
+  align-items: center;
+  background: white;
+  gap: 20px;
+  height: 60px;
+  border-radius: 20px;
+}
+.bg {
+  background-color: white;
+  border: 2px solid white;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.bg:hover {
+  background-color: aliceblue;
+}
+#bg1 {
+  background-color: #3b82f6;
+  font-size: 25px;
+  border-radius: 10px;
+  border: 2px solid #3b82f6;
+}
+#profilephoto {
+  height: 80px;
+  width: 80px;
+  border-radius: 18px;
+}
+h3 {
+  padding: 10px;
+}
+#post {
+  height: 450px;
+  width: 1100px;
+  margin: 0 0 20px 0;
+}
+p {
+  width: 1100px;
+  background-color: white;
+}
+#inclike {
+  margin: 0 0 25px 0;
+  border: 2px white solid;
+  background-color: white;
+}
+.card {
+  border: 2px solid white;
+  border-radius: 20px;
+  background: white;
+  padding: 20px;
+  margin: 0 0 20px 0;
+}
+nav {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin: 0 0 20px 0;
+}

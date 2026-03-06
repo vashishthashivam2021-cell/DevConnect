@@ -35,6 +35,10 @@ app.post("/register", async (req,res)=>{
 
   const {username,password} = req.body;
 
+  if(!username||!password){
+  res.send("Fields cannot be empty")
+  }
+  
   const existingUser = await User.findOne({username});
 
   if(existingUser){

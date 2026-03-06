@@ -5,7 +5,10 @@ form.addEventListener("submit", async function (e) {
 
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
-
+  if(username===""||password===""){
+    document.getElementById("message").innerText="Username and Password cannot be empty";
+    return;
+  }
   const response = await fetch("/register", {
     method: "POST",
     headers: {
