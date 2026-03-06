@@ -4,88 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <style>
-      body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      form {
-        display: flex;
-        flex-direction: column;
-        border: 2px solid black;
-        border-radius: 10px;
-        padding: 10px;
-        gap: 10px;
-        height: 50vh;
-        width: 20vw;
-      }
-      #username {
-        height: 30px;
-      }
-      #password {
-        height: 30px;
-      }
-      #login {
-        border: 2px solid black;
-        display: flex;
-        justify-content: center;
-        text-decoration: none;
-      }
-      p{
-        color: red;
-      }
-    </style>
+    <link rel="stylesheet" href="login.css">
   </head>
   <body>
-    <h1>Login into your personal account</h1>
+    <div class="code-bg">&lt;/&gt;</div>
+    <div class="code-bg2">{ }</div>
+    <h1>Login</h1>
     <div class="login">
       <form id="formdc">
+        <span>Username</span>
         <input
           type="text"
           placeholder="enter the username"
           name="username"
           id="username"
         />
+         <span>Password</span>
         <input
           type="password"
           placeholder="enter the password"
           name="password"
           id="password"
         />
-        <button type="submit">Login</button>
+        <button type="submit" id="l">Login</button>
+        <a href="" id="forgot">Forgot password?</a>
+        <a href="" id="create">New here ? Create Account</a>
         <p id="message"></p>
       </form>
     </div>
+    <script src="login.js"></script>
   </body>
-  <script>
-    let check =  document.getElementById("formdc")
-    check.addEventListener("submit",async function(e){
-        e.preventDefault();
-        const username = document.getElementById("username").value 
-        const password = document.getElementById("password").value
-        const response = await fetch("/login",{
-            method : "POST",
-            headers:{
-              "Content-Type":"application/json"
-            },
-            body : JSON.stringify({
-              username:username,
-              password:password
-            })
-        });
-      
-const data = await response.text();
-if(data==="you have to registered first"){
-  document.getElementById("message").innerText=data;
-}
-else if(data==="incorrect password"){
-  document.getElementById("message").innerText=data;
-}
-else{
-  window.location.href="/feed.html"
-}
-});
-  </script>
 </html>

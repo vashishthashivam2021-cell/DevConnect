@@ -1,0 +1,91 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f8fafc;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 10px;
+  gap: 10px;
+  height: 50vh;
+  width: 20vw;
+}
+#username {
+  height: 30px;
+}
+#password {
+  height: 30px;
+}
+#register {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+
+}
+#login {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #38bdf8;
+  transition: transform;
+}
+#login:hover{
+    color: white;
+}
+p {
+  color: red;
+}
+.code-bg {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-size: 120px;
+  opacity: 0.05;
+  color: black;
+}
+
+.code-bg2 {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  font-size: 120px;
+  opacity: 0.05;
+  color: black;
+}
+#create{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: #38bdf8;
+}
+.register{
+    background-color: #1e293b;
+    border-radius: 25px;
+}
+.h{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#rg{
+    height: 50px;
+    border-radius: 25px;
+    background-color: #38bdf8;
+    font-size: 18px;
+    font-weight: bold;
+}
+h1{
+      background: rgba(30, 41, 59, 0.95);
+  color: #f1f5f9;
+  border-radius: 25px;
+  font-size: 30px;
+  font-family: "JetBrains Mono", monospace;
+  border: 2px solid #334155;
+  box-shadow: 0 4px 0 #0f172a;
+}

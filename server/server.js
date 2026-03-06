@@ -11,7 +11,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "../client")));
 
-
+app.get("/index",(req,res)=>{
+  console.log("index.html is our home page");
+})
 app.post("/login", async (req, res) => {
   const { username, password } = req.body;
  const matched= await User.findOne({username});

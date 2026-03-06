@@ -4,103 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevConnect</title>
-    <style>
-      body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      form {
-        display: flex;
-        flex-direction: column;
-        border: 2px solid black;
-        border-radius: 10px;
-        padding: 10px;
-        gap: 10px;
-        height: 50vh;
-        width: 20vw;
-      }
-      #username {
-        height: 30px;
-      }
-      #password {
-        height: 30px;
-      }
-      #register {
-        border: 2px solid black;
-        display: flex;
-        justify-content: center;
-        text-decoration: none;
-      }
-      #login {
-        border: 2px solid black;
-        display: flex;
-        justify-content: center;
-        text-decoration: none;
-      }
-      p{
-        color: red;
-      }
-    </style>
+    <link rel="stylesheet" href="register.css">
   </head>
   <body>
-    <h1>DevConnect</h1>
+    <div class="code-bg">&lt;/&gt;</div>
+    <div class="code-bg2">{ }</div>
+    <h1>Register</h1>
     <div class="register">
-      <form  id="registerForm">
+      <form id="registerForm">
+        <span class="h">Username</span>
         <input
           type="text"
           placeholder="enter the username"
           name="username"
           id="username"
         />
+        <span class="h">Password</span>
         <input
           type="password"
           placeholder="enter the password"
           name="password"
           id="password"
         />
-        <button type="submit">Register</button>
-        
-        <a href="login.html" id="login">Login</a>
+        <button type="submit" id="rg">Register</button>
+
+        <a href="login.html" id="login">Existing User ? Login</a>
         <p id="message"></p>
       </form>
-      
     </div>
-    
+    <script src="register.js"></script>
   </body>
-  <script>
-
-const form = document.getElementById("registerForm");
-
-form.addEventListener("submit", async function(e){
-
-  e.preventDefault();
-
-  const username = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
-
-  const response = await fetch("/register",{
-    method:"POST",
-    headers:{
-      "Content-Type":"application/json"
-    },
-    body: JSON.stringify({
-      username:username,
-      password:password
-    })
-  });
-
-  const data = await response.text();
-
-  if(data === "Username already exists"){
-      document.getElementById("message").innerText = data;
-      form.reset();
-  }else{
-      window.location.href = "/feed.html";
-  }
-
-});
-
-</script>
 </html>

@@ -4,55 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <style>
-    .logo {
-      display: flex;
-      gap: 8px;
-      justify-content: center;
-      margin-top: 40px;
-    }
-
-    .key {
-      background: #1e293b;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 6px;
-      font-size: 22px;
-      font-family: "JetBrains Mono", monospace;
-      border: 2px solid #334155;
-      box-shadow: 0 4px 0 #0f172a;
-      transition: transform 0.2s;
-    }
-
-    .key:hover {
-      transform: translateY(-4px);
-    }
-    #symbol {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    #logoheading {
-      height: 52px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 52px;
-      background: #1e293b;
-      color: white;
-      border-radius: 6px;
-      font-size: 15px;
-      font-family: "JetBrains Mono", monospace;
-      border: 2px solid #334155;
-      box-shadow: 0 4px 0 #0f172a;
-      transition: transform 0.2s;
-    }
-    #logoheading:hover{
-        transform : translateY(-4px);
-    }
-  </style>
   <body>
+    <div class="code-bg">&lt;/&gt;</div>
+    <div class="code-bg2">{ }</div>
     <h1 class="logo">
       <span class="key">D</span>
       <span class="key">E</span>
@@ -67,6 +23,28 @@
     </h1>
     <div id="symbol">
       <h1 id="logoheading">&lt;/&gt;</h1>
+    </div>
+    <p class="tagline">
+      Connect with developers around the world.<br />
+      Share ideas • Build projects • Grow together.
+    </p>
+    <div id="btns">
+      <form action="/login.html">
+        <button id="l"type="submit">Login</button>
+      </form>
+      <form action="/register.html">
+        <button id="r"type="submit">Register</button>
+      </form>
+    </div>
+
+    <p class="intro">
+      DevConnect is a community where developers share knowledge, discuss ideas,
+      collaborate on projects, and grow together.
+    </p>
+    <div class="features">
+      <p>💬 Discuss coding ideas</p>
+      <p>🚀 Share developer projects</p>
+      <p>🤝 Connect with programmers</p>
     </div>
   </body>
 </html>
