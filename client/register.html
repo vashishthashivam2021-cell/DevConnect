@@ -39,12 +39,15 @@
         justify-content: center;
         text-decoration: none;
       }
+      p{
+        color: red;
+      }
     </style>
   </head>
   <body>
     <h1>DevConnect</h1>
     <div class="register">
-      <form action="/register" method="post">
+      <form  id="registerForm">
         <input
           type="text"
           placeholder="enter the username"
@@ -54,12 +57,50 @@
         <input
           type="password"
           placeholder="enter the password"
-          name="userpassword"
+          name="password"
           id="password"
         />
         <button type="submit">Register</button>
+        
         <a href="login.html" id="login">Login</a>
+        <p id="message"></p>
       </form>
+      
     </div>
+    
   </body>
+  <script>
+
+const form = document.getElementById("registerForm");
+
+form.addEventListener("submit", async function(e){
+
+  e.preventDefault();
+
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  const response = await fetch("/register",{
+    method:"POST",
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body: JSON.stringify({
+      username:username,
+      password:password
+    })
+  });
+
+  const data = await response.text();
+
+  if(data === "Username already exists"){
+      document.getElementById("message").innerText = data;
+      form.reset();
+  }else{
+      window.location.href = "/feed.html";
+  }
+
+});
+
+</script>
 </html>
