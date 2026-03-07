@@ -37,6 +37,8 @@ form {
 }
 #login:hover{
     color: white;
+      text-decoration: underline;
+  text-decoration-color: white;
 }
 p {
   color: red;

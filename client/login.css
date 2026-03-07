@@ -81,6 +81,11 @@ h1{
     justify-content: center;
     text-decoration: none;
 }
+#create:hover{
+  text-decoration: underline;
+  text-decoration-color: white;
+  color: #38bdf8;
+}
 #l{
     background:  #38bdf8;
     height: 50px;

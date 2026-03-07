@@ -20,6 +20,7 @@ let check = document.getElementById("formdc");
       } else if (data === "incorrect password") {
         document.getElementById("message").innerText = data;
       } else {
+        localStorage.setItem("username", username);
         window.location.href = "/feed.html";
       }
     });

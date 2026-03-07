@@ -26,6 +26,7 @@ form.addEventListener("submit", async function (e) {
     document.getElementById("message").innerText = data;
     form.reset();
   } else {
+    localStorage.setItem("username", username);
     window.location.href = "/feed.html";
   }
 });
