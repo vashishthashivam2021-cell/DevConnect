@@ -29,12 +29,7 @@ form {
 #password {
   height: 30px;
 }
-#login {
-  border: 2px solid black;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-}
+
 p {
     
 font-size: 15px;

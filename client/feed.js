@@ -1,3 +1,6 @@
+if(!localStorage.getItem("username")){
+  window.location.href = "/login.html";
+}
 const username = localStorage.getItem("username");
 document.getElementById("un").innerText = username;
 

@@ -21,13 +21,6 @@ form {
 #password {
   height: 30px;
 }
-#register {
-  border: 2px solid black;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-
-}
 #login {
   display: flex;
   justify-content: center;
@@ -60,12 +53,7 @@ p {
   opacity: 0.05;
   color: black;
 }
-#create{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    color: #38bdf8;
-}
+
 .register{
     background-color: #1e293b;
     border-radius: 25px;

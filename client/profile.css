@@ -1,5 +1,11 @@
-*{
+* {
   font-family: "Inter", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #imgcontainer {
   display: flex;
@@ -23,23 +29,7 @@
   justify-content: center;
   align-items: center;
 }
-#posts {
-  height: 500px;
-  width: 500px;
-}
-p {
-  width: 650px;
-  font-weight: bold;
-  font-family: "Courier New", Courier, monospace;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 nav {
-  
   border-radius: 20px;
   display: flex;
   flex-direction: row;
@@ -47,26 +37,10 @@ nav {
   margin: 10px 0 0 0;
   padding: 10px;
 }
-#profilephoto {
-  height: 80px;
-  width: 80px;
-  border-radius: 18px;
-}
-h3 {
-  padding: 10px;
-}
-#post {
-  height: 500px;
-  width: 650px;
-  padding: 30px;
-}
 p {
   width: 650px;
   font-weight: bold;
   font-family: "Courier New", Courier, monospace;
-}
-#inclike {
-  margin: 0 0 25px 0;
 }
 .card {
   border: 2px solid black;
@@ -74,21 +48,11 @@ p {
   padding: 10px;
   margin: 0 0 10px 0;
 }
-span{
+span {
   font-size: 30px;
 }
-#pp {
-  border-radius: 360px;
-  height: 40px;
-  width: 40px;
-}
-#un {
-  background-color: white;
-  font-weight: bolder;
-  font-size: 16px;
-}
-#head{
- display: flex;
- justify-content: center;
- align-items: center;
+#head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
